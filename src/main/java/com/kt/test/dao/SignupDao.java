@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 public class SignupDao {
 	public Object getObject(Object dataMap) {
 		Map<String, Object> resultObject = new HashMap<String, Object>();
-		resultObject.put("MEMBER_ID", "293029301202");
+		resultObject.put("ID", "293029301202");
 		resultObject.put("NAME", "name 02");
-		resultObject.put("CELLPHONE", "010-9054-1966");
+		resultObject.put("TEL", "010-9054-1966");
 		resultObject.put("EMAIL", "whiteout9966@naver.com");
 		return resultObject;
 	}

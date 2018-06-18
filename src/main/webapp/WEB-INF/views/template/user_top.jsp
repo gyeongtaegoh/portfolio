@@ -1,22 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
-
-	<div class="jumbotron" style="background-color: white;">
+<div class="jumbotron" style="background-color: white;">
 		<div class="container text-center" style="background-color: white;">
 			<a href="<c:url value = "/index" ></c:url>" >
 			<img src="<c:url value = "resources/images/player2.jpg" ></c:url>"  style="width: 15%" alt="Image"></a>
-
 		</div>
 	</div>
-
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -25,7 +21,6 @@
 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
@@ -43,7 +38,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="<c:url value = "/login" ></c:url>" ><span
 							class="glyphicon glyphicon-user"></span> Login</a></li>
-					<li><a href="<c:url value = "/signup/signup" ></c:url>"><span
+					<li><a href="<c:url value = "/signup" ></c:url>"><span
 							class="glyphicon glyphicon-user"></span> Join</a></li>
 					<li><a href="<c:url value = "/notice" ></c:url>"><span
 							class="glyphicon glyphicon-shopping-cart"></span> Notice</a></li>
@@ -51,6 +46,5 @@
 			</div>
 		</div>
 	</nav>
-
 </body>
 </html>

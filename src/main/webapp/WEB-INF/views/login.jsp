@@ -1,75 +1,76 @@
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
 <html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="<c:url value ='resources/CSS/bootstrap.min.css'/>">
+<!--   <title>Bootstrap Example</title> -->
+<!--   <meta charset="utf-8"> -->
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<%--   <link rel="stylesheet" href="<c:url value ='resources/CSS/bootstrap.min.css'/>"> --%>
   <link rel ="stylesheet" href = "<c:url value ='resources/CSS/bootstrap.login.css'/>">
-  <script src="<c:url value ='resources/javascript/jquery.min.js'/>"></script>
-  <script src="<c:url value ='resources/javascript/bootstrap.min.js'/>"></script>
-  <style>
-    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
+<%--   <script src="<c:url value ='resources/javascript/jquery.min.js'/>"></script> --%>
+<%--   <script src="<c:url value ='resources/javascript/bootstrap.min.js'/>"></script> --%>
+<!--   <style> -->
+<!-- /*     /* Remove the navbar's default rounded borders and increase the bottom margin */  */ -->
+<!-- /*     .navbar { */ -->
+<!-- /*       margin-bottom: 50px; */ -->
+<!-- /*       border-radius: 0; */ -->
       
-    }
+<!-- /*     } */ -->
     
-    /* Remove the jumbotron's default bottom margin */ 
-     .jumbotron {
-      margin-bottom: 0;
-    }
+<!-- /*     /* Remove the jumbotron's default bottom margin */  */ -->
+<!-- /*      .jumbotron { */ -->
+<!-- /*       margin-bottom: 0; */ -->
+<!-- /*     } */ -->
    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+<!-- /*     /* Add a gray background color and some padding to the footer */ */ -->
+<!-- /*     footer { */ -->
+<!-- /*       background-color: #f2f2f2; */ -->
+<!-- /*       padding: 25px; */ -->
+<!-- /*     } */ -->
+<!--   </style> -->
 
 </head>
 <body>
-<div class="jumbotron" style ="background-color: white;">
-  <div class="container text-center" style ="background-color: white;"><a href="<c:url value ='/index'/>"><img src="<c:url value ='resources/images/player2.jpg'/>" style="width:15%" alt="Image"></a>
+<!-- <div class="jumbotron" style ="background-color: white;"> -->
+<%--   <div class="container text-center" style ="background-color: white;"><a href="<c:url value ='/index'/>"><img src="<c:url value ='resources/images/player2.jpg'/>" style="width:15%" alt="Image"></a> --%>
           
-  </div>
-</div>
+<!--   </div> -->
+<!-- </div> -->
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
+<!-- <nav class="navbar navbar-inverse"> -->
+<!--   <div class="container-fluid"> -->
+<!--     <div class="navbar-header"> -->
+<!--       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> -->
+<!--         <span class="icon-bar"></span> -->
+<!--         <span class="icon-bar"></span> -->
+<!--         <span class="icon-bar"></span>                         -->
+<!--       </button> -->
       
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">½Å»óÇ°</a></li>
-        <li><a href="#">ÆÇ¸Å·©Å·</a></li>
-        <li><a href="#">ºê·£µå</a></li>
-        <li><a href="#">¿À´ÃÀÇµô</a></li>
-        <li><a href="#">¼¼ÀÏ</a></li>
-        <li><a href="#">±âÈ¹Àü</a></li>
-        <li><a href="#">·èºÏ</a></li>
-        <li><a href="#">½´Áî¸®ºä</a></li>
-        <li><a href="#">Æ÷Ä¿½º¾ÆÀÌÅÛ</a></li>
-        <li><a href="#">¸Å°ÅÁø</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="<c:url value ='/login'/>"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-        <li><a href="<c:url value ='/signup/signup'/>"><span class="glyphicon glyphicon-user"></span> Join</a></li>
-        <li><a href="<c:url value ='resources/notice'/>"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<!--     </div> -->
+<!--     <div class="collapse navbar-collapse" id="myNavbar"> -->
+<!--       <ul class="nav navbar-nav"> -->
+<!--         <li class="active"><a href="#">ì‹ ìƒí’ˆ</a></li> -->
+<!--         <li><a href="#">íŒë§¤ë­í‚¹</a></li> -->
+<!--         <li><a href="#">ë¸Œëœë“œ</a></li> -->
+<!--         <li><a href="#">ì˜¤ëŠ˜ì˜ë”œ</a></li> -->
+<!--         <li><a href="#">ì„¸ì¼</a></li> -->
+<!--         <li><a href="#">ê¸°íšì „</a></li> -->
+<!--         <li><a href="#">ë£©ë¶</a></li> -->
+<!--         <li><a href="#">ìŠˆì¦ˆë¦¬ë·°</a></li> -->
+<!--         <li><a href="#">í¬ì»¤ìŠ¤ì•„ì´í…œ</a></li> -->
+<!--         <li><a href="#">ë§¤ê±°ì§„</a></li> -->
+<!--       </ul> -->
+<!--       <ul class="nav navbar-nav navbar-right"> -->
+<%--         <li><a href="<c:url value ='/login'/>"><span class="glyphicon glyphicon-user"></span> Login</a></li> --%>
+<%--         <li><a href="<c:url value ='/signup'/>"><span class="glyphicon glyphicon-user"></span> Join</a></li> --%>
+<%--         <li><a href="<c:url value ='resources/notice'/>"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li> --%>
+<!--       </ul> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </nav> -->
 
 
 	<div class="login-page">
@@ -84,11 +85,11 @@
 				</p>
 			</form>
 			<form class="login-form">
-				<input type="text" placeholder="¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä" /> <input type="password"
-					placeholder="ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä" />
-				<button>·Î±×ÀÎ</button>
+				<input type="text" placeholder="ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš”" /> <input type="password"
+					placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”" />
+				<button>ë¡œê·¸ì¸</button>
 				<p class="message">
-					È¸¿øÀÌ ¾Æ´Ï¼¼¿ä? <a href="#">È¸¿ø°¡ÀÔÇÏ±â</a>
+					íšŒì›ì´ ì•„ë‹ˆì„¸ìš”? <a href="#">íšŒì›ê°€ì…í•˜ê¸°</a>
 				</p>
 			</form>
 		</div>

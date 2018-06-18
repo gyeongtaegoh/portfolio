@@ -1,81 +1,78 @@
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Bootstrap Example</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href= "<c:url value = "resources/CSS/bootstrap.min.css" />" >
-<script src= "<c:url value = "resources/javascript/jquery.min.js" ></c:url>"></script>
-<script src="<c:url value = "resources/javascript/bootstrap.min.js" ></c:url>" > </script>
-<style>
-/* Remove the navbar's default rounded borders and increase the bottom margin */
-.navbar {
-	margin-bottom: 50px;
-	border-radius: 0;
-}
 
-/* Remove the jumbotron's default bottom margin */
-.jumbotron {
-	margin-bottom: 0;
-}
-
-/* Add a gray background color and some padding to the footer */
-footer {
-	background-color: #f2f2f2;
-	padding: 25px;
-}
-</style>
-</head>
+<html>
+<head></head>
 <body>
+<!-- <title>Bootstrap Example</title> -->
+<!-- <meta charset="utf-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<%-- <link rel="stylesheet" href= "<c:url value = "resources/CSS/bootstrap.min.css" />" > --%>
+<%-- <script src= "<c:url value = "resources/javascript/jquery.min.js" ></c:url>"></script> --%>
+<%-- <script src="<c:url value = "resources/javascript/bootstrap.min.js" ></c:url>" > </script> --%>
+<!-- <style> -->
+<!-- /* -->
+<!-- /* .navbar { */ -->
+<!-- /* 	margin-bottom: 50px; */ -->
+<!-- /* 	border-radius: 0; */ -->
+<!-- /* } */ -->
+<!-- /* /* Remove the jumbotron's default bottom margin */ */ -->
+<!-- /* .jumbotron { */ -->
+<!-- /* 	margin-bottom: 0; */ -->
+<!-- /* } */ -->
+<!-- /* /* Add a gray background color and some padding to the footer */ */ -->
+<!-- /* footer { */ -->
+<!-- /* 	background-color: #f2f2f2; */ -->
+<!-- /* 	padding: 25px; */ -->
+<!-- /* } */ -->
+<!-- </style> -->
+<!-- </head> -->
+<!-- <body> -->
 
-	<%-- <div class="jumbotron" style="background-color: white;">
-		<div class="container text-center" style="background-color: white;">
-			<a href="<c:url value = "/index" ></c:url>" >
-			<img src="<c:url value = "resources/images/player2.jpg" ></c:url>"  style="width: 15%" alt="Image"></a>
-
-		</div>
-	</div>
-
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-					data-target="#myNavbar">
-					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">신상품</a></li>
-					<li><a href="#">판매랭킹</a></li>
-					<li><a href="#">브랜드</a></li>
-					<li><a href="#">오늘의딜</a></li>
-					<li><a href="#">세일</a></li>
-					<li><a href="#">기획전</a></li>
-					<li><a href="#">룩북</a></li>
-					<li><a href="#">슈즈리뷰</a></li>
-					<li><a href="#">포커스아이템</a></li>
-					<li><a href="#">매거진</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<c:url value = "/login" ></c:url>" ><span
-							class="glyphicon glyphicon-user"></span> Login</a></li>
-					<li><a href="<c:url value = "/signup/signup" ></c:url>"><span
-							class="glyphicon glyphicon-user"></span> Join</a></li>
-					<li><a href="<c:url value = "/notice" ></c:url>"><span
-							class="glyphicon glyphicon-shopping-cart"></span> Notice</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
- --%>
-	<%-- <div class="jumbotron"
+<!-- 	 <div class="jumbotron" style="background-color: white;"> -->
+<!-- 		<div class="container text-center" style="background-color: white;"> -->
+<%-- 			<a href="<c:url value = "/index" ></c:url>" > --%>
+<%-- 			<img src="<c:url value = "resources/images/player2.jpg" ></c:url>"  style="width: 15%" alt="Image"></a> --%>
+<!-- 		</div> -->
+<!-- 	</div> -->
+<!-- 	<nav class="navbar navbar-inverse"> -->
+<!-- 		<div class="container-fluid"> -->
+<!-- 			<div class="navbar-header"> -->
+<!-- 				<button type="button" class="navbar-toggle" data-toggle="collapse" -->
+<!-- 					data-target="#myNavbar"> -->
+<!-- 					<span class="icon-bar"></span> <span class="icon-bar"></span> <span -->
+<!-- 						class="icon-bar"></span> -->
+<!-- 				</button> -->
+<!-- 			</div> -->
+<!-- 			<div class="collapse navbar-collapse" id="myNavbar"> -->
+<!-- 				<ul class="nav navbar-nav"> -->
+<!-- 					<li class="active"><a href="#">신상품</a></li> -->
+<!-- 					<li><a href="#">판매랭킹</a></li> -->
+<!-- 					<li><a href="#">브랜드</a></li> -->
+<!-- 					<li><a href="#">오늘의딜</a></li> -->
+<!-- 					<li><a href="#">세일</a></li> -->
+<!-- 					<li><a href="#">기획전</a></li> -->
+<!-- 					<li><a href="#">룩북</a></li> -->
+<!-- 					<li><a href="#">슈즈리뷰</a></li> -->
+<!-- 					<li><a href="#">포커스아이템</a></li> -->
+<!-- 					<li><a href="#">매거진</a></li> -->
+<!-- 				</ul> -->
+<!-- 				<ul class="nav navbar-nav navbar-right"> -->
+<%-- 					<li><a href="<c:url value = "/login" ></c:url>" ><span --%>
+<!-- 							class="glyphicon glyphicon-user"></span> Login</a></li> -->
+<%-- 					<li><a href="<c:url value = "/signup" ></c:url>"><span --%>
+<!-- 							class="glyphicon glyphicon-user"></span> Join</a></li> -->
+<%-- 					<li><a href="<c:url value = "/notice" ></c:url>"><span --%>
+<!-- 							class="glyphicon glyphicon-shopping-cart"></span> Notice</a></li> -->
+<!-- 				</ul> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 	</nav> -->
+ 
+	 <div class="jumbotron"
 		style="background-color: white; padding-top: 0; padding-bottom: 24px;">
 		<p
 			style="margin: 15px; font-weight: bold; border-bottom: 1px solid darkgray">추천
@@ -114,11 +111,9 @@ footer {
 						<p style="font-size: 15px;">뉴해빗</p>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
 	<p
 		style="font-size: 21px; font-weight: bold; margin: 15px; border-bottom: 1px solid darkgray;">인기
 		상품</p>
@@ -175,7 +170,6 @@ footer {
 		</div>
 	</div>
 	<br>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-6 col-xs-12">
@@ -240,13 +234,13 @@ footer {
 		</ul>
 	</div>
 	<br>
-	<!--<footer class="container-fluid text-center">
+	<footer class="container-fluid text-center">
 		<p>Online Store Copyright</p>
 		<form class="form-inline">
 			Get deals: <input type="email" class="form-control" size="50"
 				placeholder="Email Address">
 			<button type="button" class="btn btn-danger">Sign Up</button>
 		</form>
-	</footer>-->
-</body> --%>
+	</footer>
+</body> 
 </html>

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-<!DOCTYPE html>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>Bootstrap Example</title>
@@ -17,19 +17,15 @@
 	margin-bottom: 50px;
 	border-radius: 0;
 }
-
 /* Remove the jumbotron's default bottom margin */
 .jumbotron {
 	margin-bottom: 0;
 }
-
 /* Add a gray background color and some padding to the footer */
 footer {
 	background-color: #f2f2f2;
 	padding: 25px;
 }
 </style>
-<body>
-
-</body>
+</head>
 </html>

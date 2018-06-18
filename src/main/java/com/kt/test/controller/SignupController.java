@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.kt.test.service.SignupService;
 
 @Controller
-@RequestMapping(value = "signup")
+@RequestMapping(value = "/signup")
 public class SignupController {
 
 	@Autowired
@@ -23,14 +23,12 @@ public class SignupController {
 	@RequestMapping(value = "/{action}", method = { RequestMethod.GET, RequestMethod.POST })
 	public ModelAndView actionMethod(@RequestParam Map<String, Object> paramMap, @PathVariable String action,
 			ModelAndView modelandView) {
-		String viewName = "signup/";
+		String viewName = "/signup/";
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		// List<Object> resultList = new ArrayList<Object>();
 
-		if ("signup".equalsIgnoreCase(action)) {
-			viewName = viewName + action;
-			resultMap = (Map<String, Object>) signupservice.getObject(paramMap);
-		} else if ("read".equalsIgnoreCase(action)) {
+	
+		if ("read".equalsIgnoreCase(action)) {
 			viewName = viewName + action;
 			resultMap = (Map<String, Object>) signupservice.getObject(paramMap);
 		}

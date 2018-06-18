@@ -27,7 +27,7 @@ private static final Logger logger = LoggerFactory.getLogger(IndexController.cla
 		
 		return "index";
 	}*/
-	@RequestMapping(value = "", method = {RequestMethod.GET,RequestMethod.POST}) 
+	@RequestMapping(value = "/", method = {RequestMethod.GET,RequestMethod.POST}) 
 	public String index() {
 			return "index";
 			}
@@ -44,8 +44,20 @@ private static final Logger logger = LoggerFactory.getLogger(IndexController.cla
 	public String notice() {
 			return "notice";
 			}
-	
-	
+	@RequestMapping(value = "/signup", method = {RequestMethod.GET,RequestMethod.POST}) 
+	public String signup() {
+			return "signup";
+			}
+//	@RequestMapping(value = "/*") 
+//	public void byPass() {
+//			
+//			}
+//	
+//	@RequestMapping(value = "/*/*") 
+//	public void byPass1() {
+//			
+//			}
+//	
 	
 	
 }
