@@ -7,10 +7,11 @@
 <title>Bootstrap Example</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href= "<c:url value = "/resources/CSS/bootstrap.min.css" />" >
+<link rel="stylesheet" href= "<c:url value = '/resources/CSS/bootstrap.min.css' />" >
 <script src= "<c:url value = "/resources/javascript/jquery.min.js" ></c:url>"></script>
 <script src="<c:url value = "/resources/javascript/bootstrap.min.js" ></c:url>" > </script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <!-- Bootstrap Core CSS -->
 	<link type="text/css" href="<c:url value='/resources/css/bootstrap.min.css' />" rel="stylesheet" />
 
@@ -52,4 +53,7 @@ footer {
 	background-color: #f2f2f2;
 	padding: 25px;
 }
+table {height:100%;}
+tr th {text-align: center;}
+
 </style>
