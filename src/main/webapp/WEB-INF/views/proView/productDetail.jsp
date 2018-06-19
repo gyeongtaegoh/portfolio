@@ -45,7 +45,7 @@
   
   <form action="#">
   <div class="col-sm-4">
-  <p><label class="control-label" for="inputSuccess2">상품명</label></p>
+  <label class="control-label" for="inputSuccess2">상품명</label>
 
     <div class="well">
      <p>상품</p>
