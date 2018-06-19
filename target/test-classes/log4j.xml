@@ -10,6 +10,8 @@
 		</layout>
 	</appender>
 	
+
+	
 	<!-- Application Loggers -->
 	<logger name="com.kt.test">
 		<level value="info" />

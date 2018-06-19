@@ -45,10 +45,8 @@
   
   <form action="#">
   <div class="col-sm-4">
-  <label class="control-label" for="inputSuccess2">상품명</label>
-
     <div class="well">
-     <p>상품</p>
+	<label>상품명</label>
     </div>
     <div class="well">
        <label>가격</label>
@@ -63,10 +61,11 @@
        <label>브랜드</label>
     </div>
   </div>
-  </form>
+  
 </div>
 <hr>
 </div>
     <div class="container text-center">
-    <a class="btn btn-default" href="<c:url value='/noticeView/noticeinsert' /> ">장바구니 담기</a>
+    <input class="btn btn-default" type="submit" value="장바구니 담기">
     </div>
+  </form>
