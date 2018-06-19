@@ -46,9 +46,7 @@
   <form action="#">
   <div class="col-sm-4">
   <label class="control-label" for="inputSuccess2">상품명</label>
-  <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-  <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-  <span id="inputSuccess2Status" class="sr-only">(success)</span>
+
     <div class="well">
      <p>상품</p>
     </div>
