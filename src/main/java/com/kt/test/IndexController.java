@@ -18,32 +18,20 @@ public class IndexController {
 
 private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
-	/*@RequestMapping(value = "/index", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		
-		
-		return "index";
-	}*/
 	@RequestMapping(value = "/", method = {RequestMethod.GET,RequestMethod.POST}) 
 	public String index() {
 			return "index";
 			}
-	@RequestMapping(value = "/index", method = {RequestMethod.GET,RequestMethod.POST}) 
-	public String index1() {
-			return "index";
-			}
+
 	
 	@RequestMapping(value = "/login", method = {RequestMethod.GET,RequestMethod.POST}) 
 	public String login() {
 			return "login";
 			}
-	@RequestMapping(value = "/notice", method = {RequestMethod.GET,RequestMethod.POST}) 
+/*	@RequestMapping(value = "/notice", method = {RequestMethod.GET,RequestMethod.POST}) 
 	public String notice() {
 			return "notice";
-			}
+			}*/
 	@RequestMapping(value = "/signup", method = {RequestMethod.GET,RequestMethod.POST}) 
 	public String signup() {
 			return "signup";
