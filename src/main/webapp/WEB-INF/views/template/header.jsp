@@ -38,6 +38,49 @@
 
     <!-- Custom Theme JavaScript -->
 	<script type="text/javascript" src="<c:url value='/resources/js/sb-admin-2.js' />"></script>
+	<script src="<c:url value ='/resources/javascript/jquery-3.3.1.js'/>"></script>
+<link href="<c:url value ='/resources/CSS/bootstrap.signup.css'/>"
+	rel="stylesheet" id="bootstrap-css">
+<script src="<c:url value ='/resources/javascript/bootstrap.signup1.js'/>"></script>
+<script src="<c:url value ='/resources//javascript/jquery-1.11.1.signup1.js'/>"></script>
+
+<script>
+	$(document).ready(function() {
+		var re_id = /^[a-z0-9_-]{10,30}$/; // 아이디 검사식
+		var re_pw = /^[a-z0-9_-]{8,20}$/; // 비밀번호 검사식
+		var re_mail = /^([\w\.-]+)@([a-z\d\.-]+)\.([a-z\.]{2,6})$/; // 이메일 검사식
+		var re_tel = /^[0-9]{8,11}$/; // 전화번호 검사식
+
+		//아이디 입력 창
+		$("#text").blur(function(e) {
+			if (re_id.test($("#text").val()) != true && $("#text").val().length != 0 ) {
+				alert("[ID 입력오류 : 10자 이상 영문과 숫자를 입력해주세요.]");
+			}
+		});
+
+		//비밀번호 입력창
+		$("#password").blur(function(e) {
+			if (re_pw.test($("#password").val()) != true && $("#password").val().length != 0) {
+				alert("[PW 입력오류 : 8~20자 이내 영문과 숫자를 입력해주세요.]");
+			}
+		});
+
+		//비밀번호 확인 입력 창
+		$("#password2").blur(function(e) {
+			if ($("#password").val() != $("#password2").val()) {
+				alert("[PW 입력오류 : 패스워드가 일치하지 않습니다. 재입력하세요.");
+			}
+		});
+
+		//전화번호 입력 창
+		$("#tel").blur(function(e) {
+			if (re_tel.test($("#tel").val()) != true && $("#tel").val().length != 0) {
+				alert("[전화번호 입력오류 : ]");
+			}
+		});
+
+	});
+</script>
 <style>
 /* Remove the navbar's default rounded borders and increase the bottom margin */
 .navbar {
